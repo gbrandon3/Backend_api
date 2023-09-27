@@ -1,0 +1,38 @@
+###################################
+# INGRESS
+###################################
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: gateway-ingress-19
+  labels:
+    name: gateway-ingress-19
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - pathType: Prefix
+        path: /pruebatecnica/
+        backend:
+          service:
+            name: servicio-pruebastecnicas
+            port: 
+              number: 80
+      - pathType: Prefix
+        path: /pruebatecnica-contingencia/
+        backend:
+          service:
+            name: servicio-pruebastecnicascontingencia
+            port: 
+              number: 80
+      - pathType: Prefix
+        path: /proxypt/
+        backend:
+          service:
+            name: servicio-proxypruebastecnicas
+            port: 
+              number: 80
