@@ -17,3 +17,6 @@ ServicioPruebaTecnica/src/Dominio/Modelos/__pycache__/Pregunta.cpython-310.pyc
 ServicioPruebaTecnica/src/Infraestructura/__pycache__/Database.cpython-310.pyc
 ServicioPruebaTecnica/src/Infraestructura/repositorios/__pycache__/BaseRepositorio.cpython-310.pyc
 ServicioPruebaTecnica/src/Infraestructura/repositorios/__pycache__/PreguntaRepositorio.cpython-310.pyc
+venv
+__pycache__
+entrevistas.db
