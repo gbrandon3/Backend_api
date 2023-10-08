@@ -20,5 +20,3 @@ steps:
       pytest --cov=src -v -s
   displayName: 'Run Pytest'
   
-- publish: $(System.DefaultWorkingDirectory)/coverage.xml
-  artifact: testresults
